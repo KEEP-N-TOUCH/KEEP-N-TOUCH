@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* *{
+    width: 1680px;
+    height: 1050px;
+} */
+
+body{
+
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5c5d8ebbe66669703e74661b/1616425341088-4R5ZNC3YNRJS5V6RO2M9/Financial-services-event-website-background-3.jpg%22%20data-image-dimensions=%222500x1406%22%20data-image-focal-point=%220.5,0.5%22%20alt=%22Financial-services-event-website-background-3.jpg%22%20%20data-load=%22false");
+    /* background-image: url("https://images.unsplash.com/photo-1560251085-d9c1dc542960?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ul{
+    display: inline-block;
+}
+ li a{
+     
+    text-decoration: none;
+    color: #ffff;
+    /* margin-right: 60px;
+    margin-top: 15px; */
+    /* font-family: 'Pacifico', cursive;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    line-height: 3; */
+/* }  */
+
+h1{
+    margin: 15px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 1px 1px 5px #aaa;
+    /* filter: blur(0.5px); */
+  }
+
+  .main {     
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    /* float:right; */
+
+
+
+
+  
+  }
+/*                               */
+  .main  a{
+    font-size: 20px;
+    padding: 20px 8px 6px 16px;
+    float:right;
+    display: block;
+    color: #ffff;
+    text-decoration: none;
+
+
+  }
