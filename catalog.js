@@ -35,6 +35,29 @@ function showCart() {
   for (var i = 0; i < cart.length; i++){
   
   
+    let td = document.createElement('td');
+  
+  
+  
+    td.textContent = ' X ';
+
+    td.classList.add('remover');
+ 
+  
+    td.id = i;
+
+ 
+    let tr = document.createElement('tr');
+ 
+    tbody.appendChild(tr);
+  
+    tr.appendChild(td);
+
+    tr.appendChild(document.createElement('td')).textContent = cart[i].quantity;
+    tr.appendChild(document.createElement('td')).textContent = cart[i].item;
+   
+    
+    document.getElementById('itemCount').textContent = '(' + cart.length + ')';
   let td = document.createElement('td');
   
   
@@ -79,6 +102,22 @@ function showCart() {
   //   let itemId = document.createElement('td');
   //   itemId.textContent = cart.items[i].itemId;
   //   trEl.appendChild(itemId);
+  // tdEl.textContent = 
+    
+  // trEl.appendChild(tdEl);
+  // tdEl.textContent = cart[i].quantity  ;
+    
+  // tbody.appendChild(trEl);
+    
+  // TODO: Find the table body
+    
+  // TODO: Iterate over the items in the cart
+  // TODO: Create a TR
+  // TODO: Create a TD for the delete link, quantity,  and the item
+  // TODO: Add the TR to the TBODY and each of the TD's to the TR
+    
+}
+
     // tdEl.textContent = 
     
     // trEl.appendChild(tdEl);
@@ -98,6 +137,9 @@ function showCart() {
 
 
 
+function removeItemFromCart(event) {
+  if (event.target.classList.contains('remover')){
+
   function removeItemFromCart(event) {
     if (event.target.classList.contains('remover')){
  
@@ -115,6 +157,11 @@ function showCart() {
 
     renderCart();
  
+  }
+
+    
+}
+
     }
 
     
