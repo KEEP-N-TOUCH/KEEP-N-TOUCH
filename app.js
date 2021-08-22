@@ -1,11 +1,11 @@
 'use strict';
 
 let noOfCharac = 100;
-let contents = document.querySelectorAll(".eventcontent");
+let contents = document.querySelectorAll('.eventcontent');
 contents.forEach(eventcontent => {
   //If text length is less that noOfCharac... then hide the read more button
   if(eventcontent.textContent.length < noOfCharac){
-    eventcontent.nextElementSibling.style.display = "none";
+    eventcontent.nextElementSibling.style.display = 'none';
   }
   else{
     let displayText = eventcontent.textContent.slice(0,noOfCharac);
@@ -14,9 +14,27 @@ contents.forEach(eventcontent => {
   }
 });
 
+
 function readMore(btn){
   let post = btn.parentElement;
-  post.querySelector(".dots").classList.toggle("hide");
-  post.querySelector(".more").classList.toggle("hide");
-  btn.textContent == "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More";
+  post.querySelector('.dots').classList.toggle('hide');
+  post.querySelector('.more').classList.toggle('hide');
+  btn.textContent == 'Read More' ? btn.textContent = 'Read Less' : btn.textContent = 'Read More';
 }
+
+
+
+///////////////local storage//////////////////
+
+let events = [];
+
+function Events(EventName, Price ){
+
+this.EventName = EventName;
+this.Price = Price;
+
+events.push(this);
+}
+
+
+
