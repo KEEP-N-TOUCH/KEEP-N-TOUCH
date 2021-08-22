@@ -5,16 +5,19 @@ contents.forEach(eventcontent => {
   //If text length is less that noOfCharac... then hide the read more button
   if (eventcontent.textContent.length < noOfCharac) {
     eventcontent.nextElementSibling.style.display = "none";
-  if(eventcontent.textContent.length < noOfCharac){
-    eventcontent.nextElementSibling.style.display = 'none';
-  }
-  else {
-    let displayText = eventcontent.textContent.slice(0, noOfCharac);
-    let moreText = eventcontent.textContent.slice(noOfCharac);
-    eventcontent.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+    if(eventcontent.textContent.length < noOfCharac){
+      eventcontent.nextElementSibling.style.display = 'none';
+    }
+    else {
+      let displayText = eventcontent.textContent.slice(0, noOfCharac);
+      let moreText = eventcontent.textContent.slice(noOfCharac);
+      eventcontent.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+    }
+  
   }
 });
-
+  
+  
 function readMore(btn) {
   let post = btn.parentElement;
   post.querySelector(".dots").classList.toggle("hide");
@@ -148,29 +151,7 @@ function threeEvents() {
 threeEvents();
 
 
-console.log(allEvents[0].img);
 
-
-function readMore(btn){
-  let post = btn.parentElement;
-  post.querySelector('.dots').classList.toggle('hide');
-  post.querySelector('.more').classList.toggle('hide');
-  btn.textContent == 'Read More' ? btn.textContent = 'Read Less' : btn.textContent = 'Read More';
-}
-
-
-
-///////////////local storage//////////////////
-
-let events = [];
-
-function Events(EventName, Price ){
-
-this.EventName = EventName;
-this.Price = Price;
-
-events.push(this);
-}
 
 
 
