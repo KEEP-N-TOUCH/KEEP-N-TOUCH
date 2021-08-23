@@ -4,6 +4,7 @@ let noOfCharac = 100;
 let contents = document.querySelectorAll(".eventcontent");
 contents.forEach(eventcontent => {
   //If text length is less that noOfCharac... then hide the read more button
+
   if(eventcontent.textContent.length < noOfCharac){
     eventcontent.nextElementSibling.style.display = "none";
   }
@@ -15,6 +16,24 @@ contents.forEach(eventcontent => {
 });
 
 function readMore(btn){
+
+  if (eventcontent.textContent.length < noOfCharac) {
+    eventcontent.nextElementSibling.style.display = "none";
+    if(eventcontent.textContent.length < noOfCharac){
+      eventcontent.nextElementSibling.style.display = 'none';
+    }
+    else {
+      let displayText = eventcontent.textContent.slice(0, noOfCharac);
+      let moreText = eventcontent.textContent.slice(noOfCharac);
+      eventcontent.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+    }
+  
+  }
+});
+  
+  
+function readMore(btn) {
+
   let post = btn.parentElement;
   post.querySelector(".dots").classList.toggle("hide");
   post.querySelector(".more").classList.toggle("hide");
@@ -38,6 +57,7 @@ new Events("Music", "Dec, 31/2021", "Amman - Alabdali Mall", "images/img0.png", 
 new Events("Arts", "Sep, 31/2021", "Amman - Abdoun", "images/img1.png", "30$", "join us with the best ART event in Jordan the Event will host Tariq  , Omar and Qamar the tickets will be full board (Drinks , Snacks , singers signature )");
 new Events("Education", "Nov, 20/2021", "Amman - ASAC", "images/img2.png", "5$", "many Groups will present thier own projects Come and join Us to pick wich one was the most reliaple group to work in big companies ");
 
+
 new Events("Drifting", "May, 31/2022", "Amman-Marka", "images/img3.png", "45$", "the most popular drifters in Jordan will amaze you with their cars and Drifting show, Don't miss this Event cars driver will be : Ahmad and Omar");
 
 new Events("Hourse Racing", "May, 9/2022", "Amman-Sport-City", "images/img4.png", "60$", "horse racing, Equitation and Horsemanship are terms used to indicate the rider’s ability to sit on the horse in a balanced, correct and functional manner and to control the horse effectively.");
@@ -46,7 +66,10 @@ new Events("Body building show", "Jun, 3/2022", "Amman-Sport-City", "images/img5
 
 new Events("Formela one", "Aug, 9/2022", "Dubai", "images/img6.png", "89$", "Are you a big time Crosswords fan and especially the New York Times’s Crossword but can’t find the solution to some of the clues? Then we are here for you!Solving crosswords is such a joy and also quite challenging but now with only one click you can get the answer. We are glad to help you with the solution to the clue you were stuck for so long.");
 
+
+
 new Events("Technology", "Comming Soon", "Amman-7th circle", "images/img7.png", "65$", "A leader in the business events industry, PCMA and their annual conference provides insight into unique business strategies and learning experiences. In 2021, they’ll be jumping into the hybrid game with a lot of exciting surprises to come.");
+
 
 new Events("Kids party", "Comming Soon", "Amman-Sprt-City", "images/img8.png", "75$", "Have you ever built a Lego set? Do you help your parents bake brownies? If so, you know you have to follow the right steps in the proper order from start to finish! When reading, you need to follow a certain order, as well. The events of a story in order from first to last is called the sequence of events. The sequence of events helps readers retell the most important parts of the story in order.");
 console.log(events);
