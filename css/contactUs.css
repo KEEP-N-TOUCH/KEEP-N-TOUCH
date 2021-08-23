@@ -7,24 +7,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h1{
+    
+    font-family: 'Pacifico', cursive;
+    color: whitesmoke;
+    font-size: 30px;
+    margin-left: 60px;
+
+}
 .main {
-	margin-left: 160px;
-	font-size: 28px;
-	padding: 0px 10px;
-	position: relative;
-	height: 500px;
+	width: 100%;
+    display: inline;
+    margin: 70%;
+    text-decoration: none;
+    color: #ffff;
+    
+
 
 }
 
 .main a {
-	font-size: 20px;
-	padding: 20px 8px 6px 16px;
-	float: right;
-	display: block;
+	font-size: 25px;
 	color: #ffff;
 	text-decoration: none;
+    /* float: right; */
+    padding: 20px;
+    margin-top: -25px;
     
 }
+
+
 
 
 body{

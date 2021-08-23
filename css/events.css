@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    display: inline-block;
+}
+body{
+min-height: 100vh;
+background:black;
+font-family: cursive;
+}
+
+h1{
+    
+    font-family: 'Pacifico', cursive;
+    color: whitesmoke;
+    font-size: 30px;
+    margin-left: 60px;
+    /* margin-top: 50px;  */
+
+}
+.main {
+    /* background-color: red; */
+	width: 100%;
+    display: inline;
+    margin: 70%;
+    text-decoration: none;
+    color: #ffff;
+    
+
+
+}
+
+.main a {
+	font-size: 25px;
+	color: #ffff;
+	text-decoration: none;
+    /* float: right; */
+    padding: 20px;
+    margin-top: -25px;
+    
+}
+
+
+.container{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh;
+flex-wrap: wrap;
+
+}
+.events .event-card{
+    z-index: 1;
+    background: #1D212B;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    border-radius: 10px;
+}
+.events .event-card:before{
+content: "";
+background: rgba(255, 255, 255, 0.1);
+position: absolute;
+display: block;
+top: 0;
+left: 0;
+width: 50%;
+height: 100%;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+
+}
+.events .event-card .event-img{
+    height: 200px;
+z-index: 1;
+position: absolute;
+
+width: 350px;
+top: 30%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+.events .event-card .name{
+
+    z-index: 2;
+    color:#fff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 130px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.events .event-card .price{
+   
+    z-index: 2;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+text-align: center;
+bottom: 80px;
+font-size: 30px;
+font-weight: 300;
+}
+.events .event-card .popup-btn{
+
+z-index: 2;
+color: #fff;
+background: #555;
+position: absolute;
+bottom: 20px;
+
+left: 50%;
+transform: translateX(-50%);
+font-size: 14px;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 1px;
+padding: 10px 15px;
+border-radius: 20px;
+cursor: pointer;
+}
+
+.events .popup-view{
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+
+
+}
+
+.events .popup-view.active{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+.events .popup-card{
+position: relative;
+display: flex;
+width: 800px;
+height: 500px;
+margin: 20px;
+
+}
+
+.events .popup-card .event-img{
+    z-index: 2;
+    background: #1D212B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+}
+.events .popup-card .event-img img{
+
+z-index: 2;
+position: relative;
+width: 450px;
+left: -50px;
+
+}
+.events .popup-card .info{
+z-index: 2;
+background: #fff;
+display: flex;
+flex-direction: column;
+width: 55%;
+height: 100%;
+box-sizing: border-box;
+padding: 40px;
+border-radius: 10px;
+}
+
+.events .popup-card .close-btn{
+    color: #555;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    
+    
+}
+.events .popup-card .info h2{
+    font-size: 40px;
+    line-height: 20px;
+    margin: 10px;
+    font-weight: 900;
+font-family: cursive;
+
+}
+.events .popup-card .info p{
+padding-top: 20px;
+margin-bottom: 50px;
+    font-size: 15px;
+    line-height: 2;
+    font-family: cursive;
+font-weight: 700;
+    
+
+}
+.events .popup-card .info .price{
+font-size: 45px;
+font-weight: 500;
+margin: 10px;
+margin-left: 150px;
+padding-bottom: 20px;
+font-family: cursive;
+
+}
+.events .popup-card .info .add-card-btn{
+
+color: #fff;
+background: #009dd2;
+font-size: 19px;
+font-weight: 600;
+text-align: center;
+text-decoration: none;
+margin: 10px auto;
+padding: 15px 50px;
+border-radius: 20px;
+margin-bottom: -20px;
+font-family: cursive;
+
+
+
+}
+
+@media(max-width :900px){
+    .events .popup-card {
+        flex-direction: column;
+        width: 550px;
+        height: auto;
+    }
+    .events .popup-card .event-img{
+
+        z-index: 3;
+        width: 100%;
+        height: 200px;
+        transform: translateY(0);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+
+    }
+
+    .events .popup-card .event-img img{
+
+        left: initial;
+        max-width: 100%;
+    }
+    .events .popup-card .info{
+
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+    }
+
+    .events .popup-card .info h2{
+        margin: 20px 5px 5px 5px;
+        font-size: 25px;
+
+
+    }
+
+    .events .popup-card .info p{
+        margin: 5px;
+        font-size: 13px;
+
+    }
+    .events .popup-card .info .price{
+        margin: 5px;
+        font-size: 30px;
+        
+    }
+
+    .events .popup-card .info .add-card-btn{
+        margin: 5px auto;
+        padding: 5px 40px;
+        font-size: 14px;
+
+    }
+.events .popup-card .close-btn{
+z-index: 4;
+}
+
+}
