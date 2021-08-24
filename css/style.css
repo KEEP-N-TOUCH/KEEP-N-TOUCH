@@ -64,7 +64,7 @@ h2 {
 	padding: 20px 8px 6px 16px;
 	float: right;
 	display: block;
-	color: #ffff;
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ h2 {
 	height: 45%;
 	position: relative;
 	overflow: hidden;
-	color: white;
+	color: rgb(255, 255, 255);
 	font-size: 11pt;
 	
 }
@@ -304,4 +304,25 @@ transition: 0.3s ease-in-out;
 	margin-bottom: 50px;
 	margin-right: 400px;
 	
+}
+footer{
+	
+	
+}
+#footerh1{
+	color: #000000;
+	
+	
+}
+
+.footernav a{
+	color: #000000;
+	margin-bottom: 30px;
+	
+}
+
+.sidenavIcon a{
+	margin-top: 500px;
+	margin-right: 40px;
+	width: 50%;
 }
