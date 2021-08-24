@@ -4,14 +4,33 @@
 *{
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* display: inline-block; */
+=======
+    font-family: "poppins",sans-serif;
+>>>>>>> 9468a93d127868a5a3c29337fc7dbdaf8788c0b9
 }
 
 body{
 min-height: 100vh;
+<<<<<<< HEAD
 background:rgb(185, 52, 52);
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+=======
+background:black;
+font-family: cursive;
+max-width: 100%;
+overflow-x: hidden;
+}
+header{
+    background-color: #7C1313;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 25px;
+>>>>>>> 9468a93d127868a5a3c29337fc7dbdaf8788c0b9
 }
 
 h1{
@@ -20,26 +39,62 @@ h1{
     color: whitesmoke;
     font-size: 30px;
     margin-left: 60px;
-    /* margin-top: 50px;  */
 
 }
-.main {
-    /* background-color: red; */
-	width: 100%;
-    display: inline;
-    margin: 70%;
-    text-decoration: none;
-    color: #ffff;
+header{
+    background-color: #7C1313;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 25px;
+
+
 }
 
-.main a {
-	font-size: 25px;
-	color: #ffff;
-	text-decoration: none;
-    /* float: right; */
-    padding: 20px;
-    margin-top: -25px;
+
+#hh{ 
     
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 5px;
+    text-decoration: none;
+
+}
+ul li {
+    color: #ffff;
+<<<<<<< HEAD
+=======
+    float: right;
+    margin-left: 10px;
+    display: inline;
+    position: right;
+    margin-right: 40px;
+    
+>>>>>>> 9468a93d127868a5a3c29337fc7dbdaf8788c0b9
+}
+
+ul li a{
+    font-size: 20px;
+    
+    color: #ffff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+footer{
+    margin-top: 850px;
+    font-size: 15px;
+    color: whitesmoke;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #7C1313;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 
@@ -79,7 +134,7 @@ border-bottom-left-radius: 10px;
     height: 200px;
 z-index: 1;
 position: absolute;
-
+width: inherit !important;
 width: 350px;
 top: 30%;
 left: 50%;
@@ -179,8 +234,8 @@ margin: 20px;
 .events .popup-card .event-img img{
 
 z-index: 2;
-position: relative;
-width: 450px;
+/*position: relative;*/
+width: 350px;
 left: -50px;
 
 }
@@ -243,13 +298,168 @@ font-weight: 600;
 text-align: center;
 text-decoration: none;
 margin: 10px auto;
-padding: 15px 50px;
+padding: 10px 50px;
 border-radius: 20px;
 margin-bottom: -20px;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 
 
+}
+
+.producstOnCart {
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    background-color: #202020;
+    width: 300px;
+    height: 500px;
+    color: #f0f0f0;
+    z-index: 15;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    text-align: center;
+}
+
+.producstOnCart::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.hidden {
+    display: none;
+}
+.hide {
+    display: none;
+}
+.btn {
+    background-color: #96c8cc;
+    padding: 15px 50px 15px 30px;
+    color: #141414;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    position: relative;
+}
+.top h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+.fas {
+        font-size: 1rem;
+    }
+	
+	.top button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #c24c37;
+    cursor: pointer;
+}
+
+.producstOnCart ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producstOnCart .buyItem {
+    border-bottom: #aaa 1px solid;
+    width: 90%;
+    padding: 10px 0;
+    display: flex;
+}
+
+.producstOnCart img {
+    width: 90px;
+}
+
+.producstOnCart .top {
+    display: flex;
+    background-color: #616161;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.producstOnCart > .checkout {
+    font-size: 0.9rem;
+    margin: 20px auto;
+    border: none;
+    background-color: #297075;
+    padding: 10px 20px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.overlay {
+    overflow: hidden;
+    display: inline-block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+}
+.stopScrolling {
+    height: 100vh;
+    overflow: hidden;
+}
+.buyItem h6 {
+    margin-bottom: 10px;
+}
+
+.buyItem button {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 0 6px;
+    border: none;
+}
+
+.buyItem button:active {
+    color: #96c8cc;
+}
+
+.buyItem > div {
+    padding: 0 20px;
+}
+
+.producstOnCart .empty {
+    justify-self: center;
+    margin: 150px auto;
+}
+
+.price {
+    color: #dd3333;
+    margin-top: 10px;
+    text-align: left;
+    padding: 5px;
+    font-size: 1rem;
+}
+ .event-card h6{
+    color: #dd3333;
+    margin-top: 10px;
+    text-align: left;
+    padding: 5px;
+    font-size: 1rem;
+    margin-left:-30px;
+	display:fixed;
 }
 
 @media(max-width :900px){
@@ -303,6 +513,11 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
         font-size: 30px;
         
     }
+	   .events .popup-card .info .price h6{
+        margin: 5px;
+        font-size: 30px;
+        
+    }
 
     .events .popup-card .info .add-card-btn{
         margin: 5px auto;
@@ -315,3 +530,35 @@ z-index: 4;
 }
 
 }
+
+
+
+@media screen and (max-width: 500px) {
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        width: 100vw;
+        height: 430px;
+    }
+
+    .producstOnCart {
+        font-size: 0.8rem;
+    }
+
+
+
+    .product-summary .price {
+        display: inline;
+        left: 0;
+    }
+
+
+    .fas {
+        font-size: 1rem;
+ 
+}}
+
+
+
