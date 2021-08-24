@@ -7,39 +7,52 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/events.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-             <title>Events</title>
+    <link 
+    rel="icon"
+    type="image"
+    href="https://image.pngaaa.com/571/4114571-middle.png"/>
+             <title>  Events</title>
 </head>
 
     <body>
-        
+	<nav>
+	
         <header class="main">
-            
-            <div>
-            <a   id="head"  href="index.html"> <h1> Keep N Touch</h1></a>
-            </div>
-
             <ul>
-
-                <li><a href="#">Cart</a></li>
-                <li><a href="contactUs.html">Contact US</a></li>
-                <li><a href="aboutUS.html">AboutUS</a></li>
-                <li><a href="index.html">Home</a></li>
-                
+                <a   id="hh"  href="index.html"> <h1> Keep N Touch</h1></a>
+                <li><a    href="#" class="shoppingCartButton">  Cart <span id="sum-prices"></span></a></li>
+                <li><a  class="fas fa-inbox" href="contactUs.html">  Contact us</a></li>
+                <li><a class="fas fa-address-card" href="aboutUS.html">  About us</a></li>
+                <li><a class="fas fa-home" href="index.html"> Home</a></li>
+    
             </ul>
+			         <div class="producstOnCart hide">
+                <div class="overlay"></div>
+                <div class="top">
+                    <button id="closeButton">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <h3>Cart</h3>
+                </div>
+                <ul id="buyItems">
+                    <h4 class="empty">Your shopping cart is empty</h4>
+                 
+                </ul>
+                <button class="btn checkout hidden">Check out</button>
+            </div>
+			</nav>
         </header>
 
+        
         <main>
 
    </main>
     <div class="container" id="contanier"></div>
-
     <footer>
     
-        <p>© KEEP N TOUCH</p>
-    
-        <script src="events.js"></script>
-
-    </footer>
-
+    <script src="events.js"></script>
+	<script src="shopping-cart.js"></script>
+	
+</footer>
 </body>
-</html>
+    </html>
