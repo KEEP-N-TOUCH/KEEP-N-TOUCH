@@ -12,12 +12,19 @@
 
 header{
   background: #104669;
+
+  /* margin: auto; */
+
   margin: auto;
   text-align: center;
   font-size: 35px;
   font-weight: bold;
   padding-top: 10px;
+
+  padding-bottom: 30px;
+
   padding-bottom: 70px;
+
   color: rgb(255, 255, 255);
 } 
 img{
@@ -50,12 +57,22 @@ header .main .breadcrumb li
     font: bold 20px 'Roboto', sans-serif;
     color: rgb(255, 255, 255);
     align-items: inline;
+
+    
+    
+
     margin-top: 25px;
+
 }
 
 header .main .breadcrumb li a{
     color: white;
     text-decoration: none;
+
+    margin-top:20px;
+
+    /* margin-bottom: 20px; */
+
 }
 
 
@@ -115,6 +132,9 @@ section::after{
     border-radius: 10px;
  	overflow: hidden;
     backdrop-filter: blur(25px);
+    margin-left: 13%;
+    margin-top: 10%;
+
 
 }
 
@@ -273,11 +293,40 @@ section::after{
 footer{
     background: #154c70;
     margin-top: 62px;
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+}
+footer p {
+    margin-left: 50px;
+    
+}
+#icons{
+    margin-left: 90%;
+
     font-family: 'Pacifico', cursive;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 footer p {
     margin-left: 50px;;
+
     
+    color: #ffff;
+}
+#foot{
+    margin-left: 19px;
+    float: left;
+    font-weight: 700;
+    font-size:20px;
+    font-family: 'Pacifico', cursive;
+    color: black;
+
+}
+img{
+	position: fixed;
+	width: 75px;
+	margin-top: -25px;
+	margin-left: 3px;
 }

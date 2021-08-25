@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keep N Touch</title>
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/contactUs.css">
 
@@ -17,14 +19,49 @@
 <body>
     <header>
         <div class="sidenav">
+
+            <a href="index.html">  
+            </a>
+            <img src="images/logo.jpg" alt="">
+
             <a href="index.html">
                 <img src="images/logo.png" alt="">
 
             </a>
+
         </div>
         <div class="main">
             <nav>
                 <ul class="breadcrumb">
+
+                    <li><a    href="#" class="shoppingCartButton"> <i class="fas fa-shopping-cart"></i> Cart <span id="sum-prices"></span></a></li>
+                    <li class="breadcrumb-item">
+                        <a href="events.html"> <i class="fas fa-burn"></i> Events</a>
+                    </li>
+                    <li class="breadcrumb-item"  >
+                        <a href="contactUs.html"> <i class="fas fa-inbox"></i> Contact us</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="aboutUS.html"> <i class="fas fa-address-card"></i> About us</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="index.html"> <i class="fas fa-home"></i> Home</a>
+                    </li>
+                </ul>
+                <div class="producstOnCart hide">
+                    <div class="overlay"></div>
+                    <div class="top">
+                        <button id="closeButton">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                        <h3>Cart</h3>
+                    </div>
+                    <ul id="buyItems">
+                        <h4 class="empty">Your shopping cart is empty</h4>
+                     
+                    </ul>
+                    <button class="btn checkout hidden">Check out</button>
+                 </div>
 
                     <li class="breadcrumb-item">
                         <a href="contactUs.html"> <i class="fas fa-inbox"></i> Contact us</a>
@@ -36,6 +73,7 @@
                         <a href="index.html"> <i class="fas fa-home"></i> Home </a>
                     </li>
                 </ul>
+
             </nav>
     </header>
 
@@ -96,8 +134,23 @@
         </div>
     </section>
 </main>
+
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <ul><li id="foot">© KEEP N TOUCH</li></ul>
+    <div id="icons">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+</div>
+<script src="shopping-cart.js"></script>
+
+
     <footer>
         <p id="foot">© KEEP N TOUCH </p>
+
     </footer>
 </body>
 
