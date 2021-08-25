@@ -4,15 +4,19 @@
 
 ## Main Page Wireframe:
 
-![mainpage-wireframe](https://user-images.githubusercontent.com/87301309/130346853-dd178ae7-b148-48fb-8f1b-3853b0c98e1e.png)
+![mainpage](https://user-images.githubusercontent.com/87301309/130680971-5b232ce3-c7f5-478b-a1c1-a490d7debf0c.png)
 
-## cart page wireframe:
-![cartPage-wireframe](https://user-images.githubusercontent.com/87301309/130346864-36500536-150f-439d-a1a8-3c7b84971487.png)
+
+## Event page wireframe:
+
+![eventpage](https://user-images.githubusercontent.com/87301309/130681006-a3fdd2a0-3659-4a4e-8a60-3a68884bedc5.png)
 
 ## About us page wireframe:
-![Aboutus-wireframe](https://user-images.githubusercontent.com/87301309/130335858-e49e5892-db79-4e55-a858-c9090c59a965.png)
+
+![aboutpage](https://user-images.githubusercontent.com/87301309/130681027-e54799f3-8b3b-4c37-b47b-2c6021895951.png)
+
 
 ## Contact us page wireframe: 
 
-![Contactus-wireframe](https://user-images.githubusercontent.com/87301309/130335864-205f395e-de15-4832-9f10-a69ad1cec28c.png)
+![contactpage](https://user-images.githubusercontent.com/87301309/130681032-ce9d3869-d7c1-4552-bb1d-2ce13b42d4af.png)
 

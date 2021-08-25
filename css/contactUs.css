@@ -12,12 +12,19 @@
 
 header{
   background: #104669;
+
   /* margin: auto; */
+
+  margin: auto;
   text-align: center;
   font-size: 35px;
   font-weight: bold;
   padding-top: 10px;
+
   padding-bottom: 30px;
+
+  padding-bottom: 70px;
+
   color: rgb(255, 255, 255);
 } 
 img{
@@ -50,16 +57,22 @@ header .main .breadcrumb li
     font: bold 20px 'Roboto', sans-serif;
     color: rgb(255, 255, 255);
     align-items: inline;
+
     
     
+
+    margin-top: 25px;
+
 }
 
 header .main .breadcrumb li a{
     color: white;
     text-decoration: none;
+
     margin-top:20px;
 
     /* margin-bottom: 20px; */
+
 }
 
 
@@ -280,7 +293,7 @@ section::after{
 footer{
     background: #154c70;
     margin-top: 62px;
-    
+
     padding-top: 20px;
     padding-bottom: 40px;
 
@@ -291,6 +304,14 @@ footer p {
 }
 #icons{
     margin-left: 90%;
+
+    font-family: 'Pacifico', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer p {
+    margin-left: 50px;;
+
     
     color: #ffff;
 }
