@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -188,16 +188,17 @@ li:hover{
 footer li
 {
  
-  text-align: center;
+  margin-left: 50px;
   font-size: 20px;
-  color: aliceblue;
-  font-family:'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+  font-family: 'Pacifico', cursive;
 
 }
 
 footer{
   background: #154c70;
   margin-top: 62px;
+  font-family: 'Pacifico', cursive;
  
   padding-top: 20px;
   padding-bottom: 20px;
