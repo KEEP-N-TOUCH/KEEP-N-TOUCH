@@ -1,5 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+/* #d3d1c1, #2595a2, #fcd327 */
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +54,12 @@ header .main .breadcrumb li
     display: inline-block;
     margin-right: 50px;
     float: right;
+
+    font: bold 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+
     font: bold 20px 'Roboto', sans-serif;;
+
     color: rgb(255, 255, 255);
     align-items: inline;
     margin-top: 25px;
@@ -67,8 +77,13 @@ header a{
 
 body {
     font-family: 'Roboto', sans-serif;
+
+    background-color: #ffffff;
+    color: #fdfdfd;
+
     background-color: #FFFFFF;
     color: #ffffff;
+
 }
 
 .card {

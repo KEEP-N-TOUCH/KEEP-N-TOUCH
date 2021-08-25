@@ -268,7 +268,7 @@ onLoadCartNumbers();
 =======
 new Events("Music", "Dec, 31/2021", "Amman - Alabdali Mall", "images/img0.png", "20", "join us with the best musical event in Jordan the Event will host Amer Diab,Tamer ashour and Tamer husney the tickets will be full board (Drinks , Snacks , singers signature )");
 new Events("Arts", "Sep, 31/2021", "Amman - Abdoun", "images/img1.png", "30", "join us with the best ART event in Jordan the Event will host Tariq  , Omar and Qamar the tickets will be full board (Drinks , Snacks , singers signature )");
-new Events("Education", "Nov, 20/2021", "Amman - ASAC", "images/img2.png", "5", "many Groups will present thier own projects Come and join Us to pick wich one was the most reliaple group to work in big companies ");
+new Events("Education", "Nov, 20/2021", "Amman - ASAC", "images/img2.png", "15", "many Groups will present thier own projects Come and join Us to pick wich one was the most reliaple group to work in big companies ");
 
 new Events("Drifting", "May, 31/2022", "Amman-Marka", "images/img3.png", "45", "the most popular drifters in Jordan will amaze you with their cars and Drifting show, Don't miss this Event cars driver will be : Ahmad and Omar");
 
