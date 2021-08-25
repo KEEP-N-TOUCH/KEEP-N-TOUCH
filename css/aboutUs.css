@@ -3,18 +3,12 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+=======
 
 /* #d3d1c1, #2595a2, #fcd327 */
-
-
-
-
+>>>>>>> 5467763a790cbc24ae6b8a8e6d13919b6def70c0
 * {
     margin: 0;
     padding: 0;
@@ -34,11 +28,7 @@ header{
   font-size: 35px;
   font-weight: bold;
   padding-top: 10px;
-
-  /* padding-bottom: 70px; */
-
   padding-bottom: 70px;
-
   color: rgb(255, 255, 255);
 } 
 img{
@@ -60,34 +50,23 @@ header .sidenav
 
 header .main .breadcrumb li
 {
+    margin: auto;
     text-align: center;
     list-style-type: none;
     list-style: none;
     list-style-position: unset;
     display: inline-block;
     margin-right: 50px;
-
-    /* float: right; */
-    margin-bottom: 15px;
-    font: bold 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-family: 'Roboto', sans-serif;
-padding-bottom: 15px;
-
     float: right;
 
     font: bold 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-family: 'Roboto', sans-serif;
 
-
     font: bold 20px 'Roboto', sans-serif;;
 
     color: rgb(255, 255, 255);
     align-items: inline;
-
-    /* margin-top: 25px; */
-
     margin-top: 25px;
-
 }
  #mt{
     color: black;
@@ -112,18 +91,13 @@ body {
 }
 
 .card {
-
-    max-width: 290px;
-
     max-width: 320px;
-
     background-color: #104464;
     box-shadow: 0 10px 10px #222121b9;
     text-align: center;
     font-size: 20px;
     border-radius: 15px;
-
-
+   
     margin-left: 140px;
     display: inline-block;
     align-items: center;
@@ -219,13 +193,6 @@ body {
     text-decoration: none;
 }
 
-
-/* li:hover{
-    background-color: #cea323;
-    height: auto;
-    width: 140px;
-} */
-
 li:hover{
     background-color: #cea323;
     height: auto;
@@ -253,7 +220,7 @@ footer{
   font-family: 'Pacifico', cursive;
  
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 575px) {
@@ -267,11 +234,7 @@ footer{
 }
 
 #th{
-
-    margin-left: 25%;
-
     margin-left: 28%;
-
 }
 
 #thh{
@@ -283,27 +246,5 @@ footer{
 }
 
 #th4{
-
-    margin-left: 12%;
-}
-
-#icons{
-    margin-left: 85%;
-    color: #ffff;
-
-}
-#foot{
-    margin-left: 20px;
-    float: left;
-    font-weight: 700;
-
-}
-img{
-	position: fixed;
-	width: 75px;
-	margin-top: -25px;
-	margin-left: 3px;
-
     margin-left: 10%;
-
 }
