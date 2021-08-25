@@ -1,7 +1,14 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 /* #d3d1c1, #2595a2, #fcd327 */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,41 +22,56 @@
 }
 
 header{
-  background: #3F72AF;
+  background: #104669;
   margin: auto;
   text-align: center;
   font-size: 35px;
   font-weight: bold;
   padding-top: 10px;
-  padding-bottom: 120px;
+  /* padding-bottom: 70px; */
   color: rgb(255, 255, 255);
 } 
+img{
+    width: 75px;
+    
+    margin-top: -25px;
+    margin-left: 3px;
+}
 
 header .sidenav
 {
     margin-left: 50px;
     position:absolute;
-    margin-top: 25px;
+    margin-top: 15px;
     color: aliceblue;
-	font-family: 'Lobster', cursive;
+	font-family:'Pacifico', cursive;
     font-size: 40px;
 }
 
 header .main .breadcrumb li
 {
-    margin: auto;
     text-align: center;
     list-style-type: none;
     list-style: none;
     list-style-position: unset;
     display: inline-block;
     margin-right: 50px;
-    float: right;
+    /* float: right; */
+    margin-bottom: 15px;
     font: bold 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-family: 'Roboto', sans-serif;
+padding-bottom: 15px;
+    font: bold 20px 'Roboto', sans-serif;;
+
     color: rgb(255, 255, 255);
     align-items: inline;
-    margin-top: 40px;
+    /* margin-top: 25px; */
+}
+ #mt{
+    color: black;
+    text-align: center;
+    margin-top: 110px;
+    font-size: 50px;  
 }
 
 header a{
@@ -58,18 +80,24 @@ header a{
 
 body {
     font-family: 'Roboto', sans-serif;
+
     background-color: #ffffff;
     color: #fdfdfd;
+
+    background-color: #FFFFFF;
+    color: #ffffff;
+
 }
 
 .card {
-    max-width: 280px;
-    background-color: #393E46;
-    box-shadow: 0 10px 90px #00000024;
+    max-width: 290px;
+    background-color: #104464;
+    box-shadow: 0 10px 10px #222121b9;
     text-align: center;
     font-size: 20px;
     border-radius: 15px;
-    margin-left: 100px;
+   /* height: 450px; */
+    margin-left: 140px;
     display: inline-block;
     align-items: center;
     margin-top: 150px;
@@ -88,14 +116,14 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 8px solid #7B113A;
-    box-shadow: 0 0 20px #00000033;
+    border: 8px solid #cea323;
+    box-shadow: 0 0 10px #00000033;
 }
 
 .card .card-header .profile-img:hover {
     width: 180px;
     height: 180px;
-    border: 8px solid #3662f5;
+    border: 8px solid #000000;
 }
 
 
@@ -107,13 +135,13 @@ body {
     margin-top: 30px;
     font-size: 22px;
     font-weight: bold;
-    color: #00184b;
+    color: #cea323;
 }
 
 .card .card-body .name:hover {
     margin-top: 30px;
     font-size: 24px;
-    color: #011557;
+    color: #cea323;
 }
 
 .card .card-body .mail {
@@ -123,7 +151,7 @@ body {
 
 .card .card-body .mail:hover {
     font-size: 16px;
-    color: #ffffff;
+    color: #cea323;
 }
 
 .card .card-body .job {
@@ -145,7 +173,7 @@ body {
     justify-content: center;
     height: 40px;
     width: 40px;
-    background-color: #0051ff;
+    background-color: #cea323;
     color: #ffffff;
     font-size: 20px;
     border-radius: 100%;
@@ -158,36 +186,40 @@ body {
 }
 
 .card .social-links .social-icon:hover {
-    background-color: #3662f5;
+    background-color: #000000;
     height: 50px;
     width: 50px;
     text-decoration: none;
 }
 
-
-
-
+/* li:hover{
+    background-color: #cea323;
+    height: auto;
+    width: 140px;
+} */
 .about
 {
+    line-height: 1.2;
     font-size: medium;
 }
 
 footer li
 {
  
-  text-align: center;
-  font-size: 30px;
-  color: aliceblue;
-  font-family: 'Lobster', cursive;
+  margin-left: 50px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: 'Pacifico', cursive;
 
 }
 
 footer{
-  background: rgb(20, 151, 140);
+  background: #154c70;
   margin-top: 62px;
+  font-family: 'Pacifico', cursive;
  
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 @media screen and (max-width: 575px) {
@@ -201,7 +233,7 @@ footer{
 }
 
 #th{
-    margin-left: 23%;
+    margin-left: 25%;
 }
 
 #thh{
@@ -209,9 +241,27 @@ footer{
 }
 
 #thhh{
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 #th4{
-    margin-left: 13%;
+    margin-left: 12%;
+}
+
+#icons{
+    margin-left: 85%;
+    color: #ffff;
+
+}
+#foot{
+    margin-left: 20px;
+    float: left;
+    font-weight: 700;
+
+}
+img{
+	position: fixed;
+	width: 75px;
+	margin-top: -25px;
+	margin-left: 3px;
 }

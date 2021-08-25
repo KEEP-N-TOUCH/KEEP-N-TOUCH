@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/aboutUs.css">
 
@@ -17,29 +19,50 @@
     <header>
 
         <div class="sidenav">
-          <a    href="index.html"> <h1> Keep N Touch</h1></a>
+
+            <img src="images/logo.jpg" alt="">
+            <a href="index.html">
+                
+            </a>
         </div>
         <div class="main">
             <nav>
                 <ul class="breadcrumb">
-
-                
+                    <li><a    href="#" class="shoppingCartButton"> <i class="fas fa-shopping-cart"></i> Cart <span id="sum-prices"></span></a></li>
                     <li class="breadcrumb-item">
-                        <a href="contactUs.html">Contact us</a>
+                        <a href="events.html"> <i class="fas fa-burn"></i> Events</a>
+                    </li>
+                    <li class="breadcrumb-item"  >
+                        <a href="contactUs.html"> <i class="fas fa-inbox"></i> Contact us</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="aboutUs.html">About us</a>
+                        <a href="aboutUS.html"> <i class="fas fa-address-card"></i> About us</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="index.html">Home</a>
+                        <a href="index.html"> <i class="fas fa-home"></i> Home</a>
                     </li>
                 </ul>
+                <div class="producstOnCart hide">
+                    <div class="overlay"></div>
+                    <div class="top">
+                        <button id="closeButton">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                        <h3>Cart</h3>
+                    </div>
+                    <ul id="buyItems">
+                        <h4 class="empty">Your shopping cart is empty</h4>
+                     
+                    </ul>
+                    <button class="btn checkout hidden">Check out</button>
+                 </div>
             </nav>
 
     </header>
-
+    <div id="mt">
+        <h5">Meet The Team!</h5>
+    </div>
     <main>
-
         <div class="card" id="thh">
             <div class="card-header">
                 <img src="images/Tariq.png" alt="Profile Image" class="profile-img">
@@ -55,7 +78,7 @@
                     I've studied Java programing language
                     I graduated from ASAC
                     I'm 24 years old
-                    I live in Amman Jordan <br></br></p>
+                    I live in Amman Jordan<br> <br></br></p>
             </div>
 
             <div class="social-links">
@@ -78,7 +101,7 @@
                 <br>
                 <p class="about">A highly motivated student currently pursuing an international higher Diploma in
                     software engineering and Looking forward to pursuing a Full-Stack web developer. I like sport,
-                    reading books, coding, And Eating!</p>
+                    reading books, coding, And Eating! <br> <br> </p>
             </div>
 
             <div class="social-links">
@@ -101,7 +124,10 @@
                 <p class="job">Software Engineer | Web Development</p>
                 <br>
                 <p class="about">I'm Omar Obaid. I'm 20 years old. I'm software engineer, I will graduated form ASAC
-                    next semester and I live in Amman Jordan <br></br><br><br></p>
+
+                    next semester and I live in Amman Jordan <br><br></br><br><br></p>
+
+
             </div>
 
             <div class="social-links">
@@ -147,7 +173,7 @@
                 <p class="job">Software engineer | Web development</p>
                 <br>
                 <p class="about">I'm 21 years old. I'm studying software engineering at ASAC and web development at code
-                    fellows. I'm graduating next semester <br></br><br></br><br></p>
+                    fellows. I'm graduating next semester <br></br><br></br> <br> <br></p>
             </div>
 
             <div class="social-links">
@@ -160,15 +186,18 @@
 
     </main>
 
-    <footer>
-
-        <ul>
-
-            <li>© KEEP N TOUCH</li>
-
-        </ul>
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <ul><li id="foot">© KEEP N TOUCH</li></ul>
+        <div id="icons">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="shopping-cart.js"></script>
 </body>
 
 </html>

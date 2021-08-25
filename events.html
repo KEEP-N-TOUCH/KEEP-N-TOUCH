@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/events.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
     rel="icon"
     type="image"
     href="https://image.pngaaa.com/571/4114571-middle.png"/>
-
-             <title>  Events</title>
-</head>
-    <body>
-	<nav>
-	
-        <header class="main">
-            <ul>
-                <img src="images/logo.jpg" alt="" id="img">
-                <li><a    href="#" class="shoppingCartButton"> <i class="fas fa-shopping-cart"></i> Cart <span id="sum-prices"></span></a></li>
-                <li><a  href="contactUs.html"> <i class="fas fa-inbox"></i> Contact us</a></li>
-                <li><a  href="aboutUS.html"> <i class="fas fa-address-card"></i> About us</a></li>
-                <li><a  href="index.html"> <i class="fas fa-home"></i> Home</a></li>
     
+    
+    <title>  Events</title>
+</head>
+<body>
+    <nav>
+        
+        <header class="main">
+            <ul class="breadcrumb">
+                <img src="images/logo.jpg" alt="" id="img">
+
+                <li><a    href="#" class="shoppingCartButton"> <i class="fas fa-shopping-cart"></i> Cart <span id="sum-prices"></span></a></li>
+                <li class="breadcrumb-item">
+                    <a href="events.html"> <i class="fas fa-burn"></i> Events</a>
+                </li>
+                <li class="breadcrumb-item"  >
+                    <a href="contactUs.html"> <i class="fas fa-inbox"></i> Contact us</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="aboutUS.html"> <i class="fas fa-address-card"></i> About us</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="index.html"> <i class="fas fa-home"></i> Home</a>
+                </li>
             </ul>
 			         <div class="producstOnCart hide">
                 <div class="overlay"></div>
@@ -49,10 +60,19 @@
 
    </main>
     <div class="container" id="contanier"></div>
-    <footer>
-        <h1 id="footerh1"> &copy; Keep n Touch</h1>
-    <script src="events.js"></script>
-	<script src="shopping-cart.js"></script>
+    
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <div id="icons">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <h1 id="footerh1"> &copy; Keep n Touch</h1>
+<script src="events.js"></script>
+<script src="shopping-cart.js"></script>
 	
 </footer>
 </body>
